@@ -3,6 +3,9 @@ import { Users } from "./Users.jsx";
 import { CreateUser } from "./CreateUser.jsx";
 import { User } from "./User.jsx";
 import { Root } from "./Root.jsx";
+import { Products } from "./Products.jsx";
+import { Product } from "./Product.jsx";
+import { CreateProduct } from "./CreateProduct.jsx";
 import {
 	createBrowserRouter,
 	RouterProvider,
@@ -24,6 +27,18 @@ const router = createBrowserRouter([
    {
 		path: '/adduser',
 		element: <CreateUser />,
+	},
+	{
+		path: '/products',
+		element: <Products />,
+	},
+	{
+		path: '/product/:id',
+		element: <Product />,
+	},
+	{
+		path: '/createproduct',
+		element: <CreateProduct />,
 	},
 ]);
 
